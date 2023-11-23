@@ -1,0 +1,449 @@
+/* ========== ==========  common css ========== ==========  */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+/* ========== ==========  common css ========== ==========  */
+
+/* ========== ========== left aside css ========== ==========  */
+.left_aside{
+    width: 250px;
+    height: 100vh;
+    background: #006DA4;
+    padding: 5px 0 0 0;
+    transition: .5s;
+    padding: 10px;
+}
+.left_aside .left_aside_inside{
+    display: flex;
+}
+.left_aside .left_aside_inside .logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.left_aside .left_aside_inside .logo img{
+    width: 100%;
+}
+.left_aside .left_aside_inside .brand a{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    display: block;
+    padding: 30px 50px;
+    position: relative;
+    letter-spacing: 4px;
+}
+.left_aside .left_aside_inside .brand a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: .2s;
+}
+.left_aside .left_aside_inside .brand a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.left_aside nav ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.left_aside nav ul a{
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: block;
+    transition: .2s;
+}
+.left_aside nav ul a:hover{
+    background: #004D74;
+}
+.left_aside_off{
+    margin-left: -250px;
+}
+/* ========== ==========  Left aside css ========== ==========  */
+
+/* ========== ==========  main section css ========== ==========  */
+main{
+    width: 100%;
+    position: relative;
+}
+main nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #006494;
+    
+}
+main .nav_logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+}
+main .nav_logo img{
+    width: 100%;
+}
+main .nav_info ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+main .nav_info ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 20px 20px;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+main .nav_info ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: .5s;
+}
+main .nav_info ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+main .nav_info ul li button{
+    color: #fff;
+    display: block;
+    border: none;
+    background: none;
+    font-size: 20px;
+    padding: 20px 15px 0 25px;
+    transition: .5s;
+    cursor: pointer;
+} 
+main .nav_info ul li button:hover{
+    color: #032030;
+}
+main .nav_info #login{
+    color: #fff;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0 0 1px 0;
+    margin: 10px 0 0 15px;
+    transition: .5s;
+}
+main .nav_info #login:hover{
+    background: #004D74;
+    color: aliceblue;
+}
+main .left_side_button{
+    color: #fff;
+    background: #003554;
+    border: none;
+    position: absolute;
+    top: 40%;
+    left: -0px;
+    font-size: 10px;
+    border-radius: 0 5px 5px 0;
+    padding: 50px 3px;
+    display: block;
+    transition: .5s;
+    cursor: pointer;
+}
+main .left_side_button:hover{
+
+    background: #004D74;
+    color: azure;
+}
+
+
+/* ========== ==========  main section css ========== ==========  */
+
+/* ========== ========== hero section css ========== ==========  */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url(./../img/hero_img\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+#hero .hero_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#hero .hero_info .hero_item{
+    padding-top: 200px;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+#hero .hero_info .hero_item h1{
+    font-size: 40px;
+    letter-spacing: 25px;
+}
+#hero .hero_info .hero_item h3{
+    font-size: 30px;
+    padding: 20px 0;
+    letter-spacing: 5px;
+}
+#hero .hero_info .hero_item p{
+    letter-spacing: 1px;
+}
+#hero .hero_info .hero_item button{
+    font-size: 20px;
+    padding: 15px 20px;
+    background: #006494;
+    margin: 40px 10px;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+    color: #fff;
+    cursor: pointer;
+}
+#hero .hero_info .hero_item button:hover{
+    background: #032030;
+}
+/* ========== ========== hero section css ========== ==========  */
+
+/* ========== ==========  search bar css ========== ==========  */
+.search_box{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: .5s;
+    transform: scale(0) rotate(25deg) skew(45deg);
+    transform-origin: top right;   
+}
+.search_box .input_info{
+    width: 50%;
+}
+.search_box input{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid yellow;
+    background: none;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+}
+.search_box #search_btn{
+    color: #fff;
+    background: none;
+    border: 1px solid yellow;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 20px;
+    border-radius: 25px;
+    transition: .5s;
+}
+.search_box #search_btn:hover{
+    background: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+}
+.search_box #search_close_btn{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid yellow;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: .5s;
+}
+.search_box #search_close_btn:hover{
+    background: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+}
+/* ========== ==========  search bar css ========== ==========  */
+
+/* ========== ==========   Log In section css ========== ==========   */
+.main_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #032030, #022B42, #003554, #004D74, #006494, #006DA4);
+    transform: scaleY(0) rotate(0) skew(0);
+    transform-origin: top;
+    transition: .5s;
+}
+.main_login .log_in{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+}
+.main_login .log_in input{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid #fff;
+    
+}
+.main_login #login_btn{
+    font-size: 18px;
+    padding: 10px;
+    background: none;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 45%;
+    transition: .5s;
+}
+.main_login #login_btn:hover{
+    background: #032030;
+}
+.main_login .log_in input .back_btn{
+    font-size: 18px;
+}
+.main_login .back_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 10px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: .4s;
+}
+.main_login .back_btn:hover{
+    background: #032030;
+}
+.main_login .pass{
+    position: relative;
+}
+.main_login .pass #eye_btn{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+/* ========== Log In section css ==========  */
+
+/* ========== Right aside css ========== */
+
+.right_aside{
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    padding: 10px 0 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+}
+.right_aside .info:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.right_aside h1{
+    color: #032030;
+    padding: 0 0 20px 20px;
+    border-bottom: 1px solid #003554;
+}
+.right_aside nav ul a{
+    color: #032030;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding: 30px 0;
+    display: block;
+}
+.right_aside ul .info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.right_aside ul img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.right_aside #pack_close_btn{
+    font-size: 20px;
+    color: #032030;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: none;
+    transition: 0.4s;
+    margin: 0 0 20px 280px;
+}
+.right_aside #pack_close_btn:hover{
+    background: #032030;
+    color: #fff;
+}
+.right_aside .button{
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 25px;
+    margin-top: 20px;
+    background: #006DA4;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.right_aside .button:hover{
+    background: #022B42;
+}
+/* ========== Right aside css ========== */
+
